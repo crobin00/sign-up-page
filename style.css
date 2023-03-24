@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url(assets/Norse-Bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-section {
+  flex: 1;
+  background: url(assets/plants.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo-row {
+  margin-top: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 5rem;
+  font-family: "Norse Bold", sans-serif;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+}
+
+.logo-row img {
+  width: 65px;
+}
+
+.main-section {
+  flex: 2;
+  background-color: rgb(246, 246, 241);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-header {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding: 0 4rem;
+}
+
+.form-header > p {
+  margin-bottom: 15px;
+}
+
+.form-inputs {
+  background-color: white;
+  padding: 1rem 4rem;
+  margin-bottom: 30px;
+}
+
+.form-inputs p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 100px;
+}
+
+.form-row label {
+  color: gray;
+  font-weight: 800px;
+  text-transform: uppercase;
+}
+
+.form-row label > span {
+  color: red;
+}
+
+.form-row input {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #E5E7EB;
+}
+
+.form-row input:user-invalid {
+  border: 2px solid red;
+}
+
+form button {
+  margin: 0 4rem;
+  background-color: #596D48;
+  color: white;
+  width: 200px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+}
+
+.log-in {
+  margin: 0 4rem;
+  margin-top: 30px;
+}
+
+.log-in span {
+  color: #596D48;
+  font-weight: bold;
+}
